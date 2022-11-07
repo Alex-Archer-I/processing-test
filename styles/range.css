@@ -1,0 +1,52 @@
+.order-input-range {
+    position: relative;
+    --progress-bar: 10%;
+}
+
+.order-input-range input{
+    appearance: none;
+    width: 100%;
+    position: absolute;
+    left: 0rem;
+    bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #D5D5D5;
+    height: 2px;    
+}
+
+.order-input-range input::-webkit-slider-thumb {
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: var(--light-blue);
+    border-radius: 100%;
+}
+
+.order-input-range input::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: var(--progress-bar);
+    background-color: var(--light-blue);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.order-input-range input::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    background-color: var(--light-blue);
+    border-radius: 100%;
+}
+
+.order-input-range input::-moz-range-track {
+    background-color: #D5D5D5;
+    height: 2px;
+}
+
+.order-input-range input::-moz-range-progress {
+    background-color: var(--light-blue);
+    height: 2px;
+}

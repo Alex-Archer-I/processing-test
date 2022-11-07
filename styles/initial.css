@@ -1,0 +1,102 @@
+html {
+    --light-blue: #098FCF;
+    --dark-blue: #043C77;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.middle {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    margin-top: 100px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    border: none;
+    background-color: var(--light-blue);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btn-big {
+    width: 258px;
+    height: 46px;
+}
+
+.btn-small {
+    width: 176px;
+    height: 46px;
+}
+
+.btn:hover {
+    background-color: var(--dark-blue);
+}
+
+.input {
+    height: 46px;
+    box-sizing: border-box;
+    border: 1px solid #D5D5D5;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.slider-btn {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #D5D5D5;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.slider-btn:hover {
+    background-color: var(--light-blue);
+}
+
+@media (max-width:1120px) {
+    .middle {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    h1, h2 {
+        text-align: center;
+    }
+}

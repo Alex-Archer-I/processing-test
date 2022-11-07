@@ -1,0 +1,62 @@
+.works-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.works-card {
+    width: 353px;
+    background-color: var(--dark-blue);
+    padding: 30px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.works-card h3 {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.works-card-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-card-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.works-card-minutes p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.works-card-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+@media (max-width: 1070px) {
+    #works h2 {
+        text-align: center;
+    }
+
+    .works-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .works-cards {
+        width: 100%;
+    }
+
+    .works-card {
+        width: 95%;
+        padding: 5px;
+    }
+}

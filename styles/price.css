@@ -1,0 +1,107 @@
+.price-table {
+    width: 100%;
+}
+
+.price-row {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.price-item {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    padding-top: 16px;
+    padding-left: 20px;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+}
+
+.price-head {
+    height: 56px;
+    background-color: var(--dark-blue);
+}
+
+.price-head .price-item {
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border: none;
+}
+
+.price-row:nth-child(2) .price-col {
+    display: grid;
+    height: 239px;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.price-row:nth-child(2) .price-col:nth-child(1) .price-item{
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-color: var(--light-blue);
+    color: #fff;
+    border: none;
+}
+
+.price-row:nth-child(2) .price-col:nth-child(2) .price-item:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.price-row:nth-child(2) .price-col:nth-child(2) .price-item:nth-child(2) {
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.price-row:nth-child(3) .price-col {
+    display: grid;
+    height: 382px;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.price-row:nth-child(3) .price-col:nth-child(1) .price-item {
+    grid-row-start: 1;
+    grid-row-end: 9;
+    background-color: var(--light-blue);
+    color: #fff;
+    border: none;
+}
+
+.price-row:nth-child(3) .price-col:nth-child(2) .price-item:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.price-row:nth-child(3) .price-col:nth-child(2) .price-item:nth-child(2) {
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.price-row:nth-child(3) .price-col:nth-child(2) .price-item:nth-child(3) {
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+@media (max-width: 770px) {
+    .price-row {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .price-item {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .price-item {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .price-item {
+        font-size: 7px;
+    }
+}

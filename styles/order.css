@@ -1,0 +1,110 @@
+#order {
+    background-color: #F9F9F9;
+    padding: 73px 0;
+}
+
+#order form {
+    display: flex;
+}
+
+.order-inputs {
+    margin-right: 71px;
+}
+
+.order-total {
+    width: 638px;
+    padding: 40px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.order-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.order-input label {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.order-input input {
+    width: 409px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.order-item h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0;
+}
+
+.order-item h4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0;
+}
+
+.order-item p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.order-item-text {
+    width: 70%;
+}
+
+.order-item-number {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.order-item-number__bold {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+@media (max-width: 860px) {
+    #order h2 {
+        text-align: center;
+    }
+
+    #order form {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 750px) {
+    .order-total {
+        width: 95%;
+        box-sizing: border-box;
+    }
+
+    .order-inputs {
+        width: 95%;
+        margin: 0;
+    }
+
+    .order-input input {
+        width: 100%;
+    }
+
+    .order-total button {
+        width: 90%;
+    }
+}
